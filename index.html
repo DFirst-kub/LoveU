@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Y 9M ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="heart-bg"></div>
+
+<div class="container">
+    <div class="music-widget" onclick="toggleMusic()">
+        <span id="music-status">🎵</span>
+        <audio id="love-song" loop>
+            <source src="Mew.m4a" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="main-card" id="password-screen">
+        <h1>🔒 รหัสผ่าน</h1>
+        <p class="subtitle">อ้วนต้องใส่รหัสก่อนถึงจะเข้าได้นะ!</p>
+        <div style="margin-bottom: 20px;">
+            <input type="password" id="pass-input" placeholder="ใส่รหัสผ่าน..." 
+                   style="padding: 10px; border-radius: 10px; border: 2px solid var(--soft-pink); width: 80%; text-align: center; font-family: 'Mali', cursive;">
+        </div>
+        <button class="menu-item" onclick="checkPassword()" style="width: 50%; margin: 0 auto; display: block;">ตกลง</button>
+        <p id="error-msg" style="color: red; display: none; margin-top: 10px;">รหัสผิดนะไอ้ตูมุ! ❌</p>
+    </div>
+
+    <div class="main-card" id="main-menu">
+        <h1>❤️1Y 9M เเล้วนะอ้วน</h1>
+        <p class="subtitle">ไอ้อ้วนมาดูเเล้วอ่อ ห้ามร้องไห้นะไอ้ตูมุ🐖😋</p>
+        
+        <div class="menu-grid">
+            <div class="menu-item" onclick="showContent('thanks')">💌 คำขอบคุณจากใจ</div>
+            <div class="menu-item" onclick="showContent('photos')">📸 อัลบั้มรูปคู่ของเรา</div>
+            <div class="menu-item" onclick="showContent('videos')">🎥 วิดีโอของเรา</div> 
+            <div class="menu-item" onclick="showContent('timeline')">📅 สิ่งที่เค้าจะพยายามทำให้ได้</div>
+            <div class="menu-item" onclick="showContent('future')">🌟 สิ่งที่อยากทำด้วยกัน</div>
+        </div>
+    </div>
+
+    <div class="main-card content-view" id="view-thanks">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>💌 ขอบคุณนะอ้วน</h2>
+        <p class="thanks-text">
+            ขอบคุณที่คอยเป็นกำลังใจให้กันเสมอ<br>
+             ขอบคุณที่คอยสอนเค้าให้โต<br>
+            ขอบคุณที่ทำให้เค้ายิ้มได้เสมอ<br>
+             ขอบคุณที่ผ่านเรื่องที่เราทะเลาะกันบ้างโกธรกันบ้างมาจนวันนี้นะคับ<br>
+            รักอ้วนมากกกกกนะ<br>
+            เเละก็ขอบคุณที่ทำให้ทุกๆ วันกลายเป็นวันที่พิเศษนะไอ้ตูมุ 🐷❤️
+        </p>
+    </div>
+
+    <div class="main-card content-view" id="view-photos">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>📸 Memory Gallery</h2>
+        <div class="photo-placeholder">
+            <img src="jpg/1.PNG" alt="รูปคู่ 1">
+            <img src="jpg/2.jpg" alt="รูปคู่ 2">
+            <img src="jpg/3.jpg" alt="รูปคู่ 3">
+            <img src="jpg/4.jpg" alt="รูปคู่ 4">
+            <img src="jpg/5.jpg" alt="รูปคู่ 5">
+            <img src="jpg/6.webp" alt="รูปคู่ 6">
+            <img src="jpg/7.jpg" alt="รูปคู่ 7">
+        </div>
+        <p>อ้วนเหมาะสมกับรอยยิ้มมากๆนะคับ ✨</p>
+    </div>
+
+    <div class="main-card content-view" id="view-timeline">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>สิ่งที่เค้าจะพยายามทำให้ได้</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <p>เค้าขอโทษที่บ้างครั้งพาอ้วนไปกินหรือไปทำอะไรที่อ้วนคาดหวังไว้ไม่ได้เลย</p>
+            </div>
+            <div class="timeline-item">
+                <p>ขอโทษที่ทำตัวเป็นเด็กนะคับ</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+                <p>เค้าจะพยายามไม่คิดมากอ้วนจะได้สบายใจขึ้นนะ</p>
+            </div>
+            <div class="timeline-item">
+                <p>เค้าจะพยายามพาอ้วนไปกินเเละเก็บเงินให้มากกว่านี้นะคับ</p>
+            </div>
+            <div class="timeline-item">
+                <p>เค้าจะพยายามพาอ้วนไปกินเเละเก็บเงินให้มากกว่านี้นะคับ</p>
+            </div>
+            <div class="timeline-item">
+                <p><h1>เเละที่สำคัญที่สุดที่อยากบอก</h1><br>
+                <h2>เค้ารักอ้วนที่สุดเลยนะคับ</h2></p>
+            </div>
+    </div>
+
+    <div class="main-card content-view" id="view-future">
+        <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+        <h2>🌟 Future Together</h2>
+        <ul class="future-list">
+            <li>✅ ไปเที่ยวด้วยกันบ่อยๆ</li>
+            <li>✅ พาอ้วนไปกินของอร่อยๆ</li>
+            <li>✅ ซื้อของสำอางเยอะๆให้อ้วนเยอะๆ</li>
+            <li>✅ ไปเที่ยวด้วยกันบ่อยๆ</li>
+            <li>✅ พาอ้วนไปกินของอร่อยๆ</li>
+            <li><h1>สิ่งที่ทำเเล้วชอบที่สุด</h1></li>
+            <li>การทำอะไรก็ได้เเล้วเห็นรอยยิ้มของอ้วนเเค่มีความสุขที่สุดละ</li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-card content-view" id="view-videos">
+    <button class="back-btn" onclick="goHome()">⬅️ กลับหน้าหลัก</button>
+    <h2>🎥 Our Videos</h2>
+    
+    <div class="video-container">
+        <button class="nav-btn prev" onclick="changeVideo(-1)">❮</button>
+        <button class="nav-btn next" onclick="changeVideo(1)">❯</button>
+
+        <div class="video-slide active">
+            <div class="video-wrapper">
+                <video playsinline controls>
+                    <source src="jpg/V1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="video-caption">เเง้นๆๆๆ 🏍️</p>
+        </div>
+        
+        <div class="video-slide">
+            <div class="video-wrapper">
+                <video playsinline controls>
+                    <source src="jpg/V2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="video-caption">เคาท์ที่มีความสุขมากๆเพราะเราอยู่ด้วยกัน 🎆</p>
+        </div>
+
+        <div class="video-slide">
+            <div class="video-wrapper">
+                <video playsinline controls>
+                    <source src="jpg/V3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="video-caption">ล้มเเชมป์ละนะ 🏆</p>
+        </div>
+
+        <div class="video-slide">
+            <div class="video-wrapper">
+                <video playsinline controls>
+                    <source src="jpg/V4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="video-caption">ลอยกระทงด้วยกันนน 🌕</p>
+        </div>
+
+        <div class="video-slide">
+            <div class="video-wrapper">
+                <video playsinline controls>
+                    <source src="jpg/V5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="video-caption">ไอ้เด็กน้อยของเค้า 👶</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
